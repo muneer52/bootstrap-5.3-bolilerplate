@@ -1,0 +1,432 @@
+//Accent Color Auto Generator using bd4 colors including other color customvars.scss
+@mixin AccentColorClass() {
+  @each $color, $value in $colors {
+    // Other colors backgrounds
+    .bg-#{$color} {
+      background-color: $value !important;
+    }
+
+    //Other Fonts Colors Class
+    .text-#{$color} {
+      &,
+      * {
+        color: $value !important;
+      }
+    }
+
+    //svg Colors Class
+    .svg-#{$color} {
+      &,
+      * {
+        fill: $value !important;
+      }
+    }
+
+    .btn-#{$color} {
+      @include button-variant($value, $value);
+
+      &:hover {
+        @include button-variant($value, $value);
+      }
+    }
+
+    .btn-#{$color}-outline {
+      @include button-outline-variant($value, $value);
+
+      &:hover {
+        @include button-outline-variant($value, $value);
+      }
+    }
+
+    // 100 (88%)
+    //Other Fonts Colors Class
+    // Other colors backgrounds
+    .bg-#{$color}-100 {
+      background-color: tint-color($value, 88%) !important;
+    }
+
+    //Other Fonts Colors Class
+    .text-#{$color}-100 {
+      &,
+      * {
+        color: tint-color($value, 88%) !important;
+      }
+    }
+
+    //svg Colors Class
+    .svg-#{$color}-100 {
+      &,
+      * {
+        fill: tint-color($value, 88%) !important;
+      }
+    }
+
+    .btn-#{$color}-100 {
+      @include button-variant(tint-color($value, 88%), tint-color($value, 88%));
+
+      &:hover {
+        @include button-variant(tint-color($value, 88%), tint-color($value, 88%));
+      }
+    }
+
+    .btn-#{$color}-outline-100 {
+      @include button-outline-variant(tint-color($value, 88%), tint-color($value, 88%));
+
+      &:hover {
+        @include button-outline-variant(tint-color($value, 88%), tint-color($value, 88%));
+      }
+    }
+    
+    @include media-breakpoint-down(md) {
+      .bg-m-#{$color} {
+        background-color: $value !important;
+      }
+  
+      //Other Fonts Colors Class
+      .text-m-#{$color} {
+        &,
+        * {
+          color: $value !important;
+        }
+      }
+    }
+  }
+
+  // bs4 grays 100 - 900
+  @each $grayColor, $value in $grays {
+    // Other colors backgrounds
+    .bg-gray-#{$grayColor} {
+      background-color: $value !important;
+    }
+
+    //Other Fonts Colors Class
+    .text-gray-#{$grayColor} {
+      &,
+      * {
+        color: $value !important;
+      }
+    }
+
+    //svg Colors Class
+    .svg-gray-#{$grayColor} {
+      &,
+      * {
+        fill: $value !important;
+      }
+    }
+  }
+}
+@mixin AccentColorMobileClass() {
+  @each $color, $value in $colors {
+    @include media-breakpoint-down(md) {
+      .bg-m-#{$color} {
+        background-color: $value !important;
+      }
+  
+      //Other Fonts Colors Class
+      .text-m-#{$color} {
+        &,
+        * {
+          color: $value !important;
+        }
+      }
+    }
+  }
+}
+
+
+//Social Color Auto Generator
+@mixin socialColorClass() {
+  @each $socialColor, $color in $socialColors {
+    //Other Fonts Colors Class
+    .#{$socialColor}-txt {
+      &,
+      * {
+        color: $color !important;
+      }
+    }
+    .bg-#{$socialColor} {
+      background-color: $color !important;
+    }
+
+    .btn-#{$socialColor} {
+      @include button-variant($color, $color);
+
+      &:hover {
+        @include button-variant($color, $color);
+      }
+    }
+
+    .btn-outline-#{$socialColor} {
+      @include button-outline-variant($color, $color);
+
+      &:hover {
+        @include button-variant($color, $color);
+      }
+    }
+  }
+}
+
+//Font size Classes Auto Generator
+@mixin fontSizeClass() {
+  @each $fontSize in $fontSizes {
+    //font size class
+    .f#{$fontSize} {
+      font-size: $fontSize + px !important;
+    }
+    .lh-#{$fontSize} {
+      line-height: $fontSize + px !important;
+    }
+  }
+}
+
+@mixin fontSizeClass-sm() {
+  @each $fontSize in $fontSizes {
+    //font size class
+    .f-sm-#{$fontSize} {
+      font-size: $fontSize + px !important;
+    }
+    .lh-sm-#{$fontSize} {
+      line-height: $fontSize + px !important;
+    }
+  }
+}
+
+@mixin fontSizeClass-md() {
+  @each $fontSize in $fontSizes {
+    //font size class
+    .f-md-#{$fontSize} {
+      font-size: $fontSize + px !important;
+    }
+  }
+}
+
+//Margin Classes Auto Generator
+@mixin magpadClass() {
+  @each $magpad in $magpads {
+    //margin Class
+    .mag-#{$magpad} {
+      margin: $magpad + px !important;
+    }
+
+    //padding class
+    .pad-#{$magpad} {
+      padding: $magpad + px !important;
+    }
+
+    .padX-#{$magpad} {
+      padding-left: $magpad + px !important;
+      padding-right: $magpad + px !important;
+    }
+
+    .padY-#{$magpad} {
+      padding-top: $magpad + px !important;
+      padding-bottom: $magpad + px !important;
+    }
+
+    .magX-#{$magpad} {
+      margin-left: $magpad + px !important;
+      margin-right: $magpad + px !important;
+    }
+
+    .magY-#{$magpad} {
+      margin-top: $magpad + px !important;
+      margin-bottom: $magpad + px !important;
+    }
+
+    //specific corner margins
+    .topMag-#{$magpad} {
+      margin-top: $magpad + px !important;
+    }
+    .botMag-#{$magpad} {
+      margin-bottom: $magpad + px !important;
+    }
+    .leftMag-#{$magpad} {
+      margin-left: $magpad + px !important;
+    }
+    .rightMag-#{$magpad} {
+      margin-right: $magpad + px !important;
+    }
+
+    //specific corner paddings
+    .topPad-#{$magpad} {
+      padding-top: $magpad + px !important;
+    }
+    .botPad-#{$magpad} {
+      padding-bottom: $magpad + px !important;
+    }
+    .leftPad-#{$magpad} {
+      padding-left: $magpad + px !important;
+    }
+    .rightPad-#{$magpad} {
+      padding-right: $magpad + px !important;
+    }
+  }
+}
+
+//Margin Classes Auto Generator
+@mixin magpadClass-sm() {
+  @each $magpad in $magpads {
+    //margin Class
+    .mag-sm-#{$magpad} {
+      margin: $magpad + px !important;
+    }
+
+    //padding class
+    .pad-sm-#{$magpad} {
+      padding: $magpad + px !important;
+    }
+
+    //padding class
+    .pad-#{$magpad} {
+      padding: $magpad + px !important;
+    }
+
+    .padX-sm-#{$magpad} {
+      padding-left: $magpad + px !important;
+      padding-right: $magpad + px !important;
+    }
+
+    .padY-sm-#{$magpad} {
+      padding-top: $magpad + px !important;
+      padding-bottom: $magpad + px !important;
+    }
+
+    .magX-sm-#{$magpad} {
+      margin-left: $magpad + px !important;
+      margin-right: $magpad + px !important;
+    }
+
+    .magY-sm-#{$magpad} {
+      margin-top: $magpad + px !important;
+      margin-bottom: $magpad + px !important;
+    }
+
+    //specific corner margins
+    .topMag-sm-#{$magpad} {
+      margin-top: $magpad + px !important;
+    }
+    .botMag-sm-#{$magpad} {
+      margin-bottom: $magpad + px !important;
+    }
+    .leftMag-sm-#{$magpad} {
+      margin-left: $magpad + px !important;
+    }
+    .rightMag-sm-#{$magpad} {
+      margin-right: $magpad + px !important;
+    }
+
+    //specific corner paddings
+    .topPad-sm-#{$magpad} {
+      padding-top: $magpad + px !important;
+    }
+    .botPad-sm-#{$magpad} {
+      padding-bottom: $magpad + px !important;
+    }
+    .leftPad-sm-#{$magpad} {
+      padding-left: $magpad + px !important;
+    }
+    .rightPad-sm-#{$magpad} {
+      padding-right: $magpad + px !important;
+    }
+  }
+}
+
+@mixin magpadClass-md() {
+  @each $magpad in $magpads {
+    //margin Class
+    .mag-md-#{$magpad} {
+      margin: $magpad + px !important;
+    }
+
+    //padding class
+    .pad-md-#{$magpad} {
+      padding: $magpad + px !important;
+    }
+
+    .padX-md-#{$magpad} {
+      padding-left: $magpad + px !important;
+      padding-right: $magpad + px !important;
+    }
+
+    .padY-md-#{$magpad} {
+      padding-top: $magpad + px !important;
+      padding-bottom: $magpad + px !important;
+    }
+
+    .magX-md-#{$magpad} {
+      margin-left: $magpad + px !important;
+      margin-right: $magpad + px !important;
+    }
+
+    .magY-md-#{$magpad} {
+      margin-top: $magpad + px !important;
+      margin-bottom: $magpad + px !important;
+    }
+
+    //specific corner margins
+    .topMag-md-#{$magpad} {
+      margin-top: $magpad + px !important;
+    }
+    .botMag-md-#{$magpad} {
+      margin-bottom: $magpad + px !important;
+    }
+    .leftMag-md-#{$magpad} {
+      margin-left: $magpad + px !important;
+    }
+    .rightMag-md-#{$magpad} {
+      margin-right: $magpad + px !important;
+    }
+
+    //specific corner paddings
+    .topPad-md-#{$magpad} {
+      padding-top: $magpad + px !important;
+    }
+    .botPad-md-#{$magpad} {
+      padding-bottom: $magpad + px !important;
+    }
+    .leftPad-md-#{$magpad} {
+      padding-left: $magpad + px !important;
+    }
+    .rightPad-md-#{$magpad} {
+      padding-right: $magpad + px !important;
+    }
+  }
+}
+
+//Width and Height Classes Auto Generator
+@mixin widthClass() {
+  @each $width in $widths {
+    //font size class
+    .w#{$width} {
+      width: $width + px !important;
+    }
+    .h#{$width} {
+      height: $width + px !important;
+    }
+  }
+}
+
+@mixin widthClass-sm() {
+  @each $width in $widths {
+    //font size class
+    .w-sm-#{$width} {
+      width: $width + px !important;
+    }
+    .h-sm-#{$width} {
+      height: $width + px !important;
+    }
+  }
+}
+
+@mixin widthClass-md() {
+  @each $width in $widths {
+    //font size class
+    .w-md-#{$width} {
+      width: $width + px !important;
+    }
+    .h-md-#{$width} {
+      height: $width + px !important;
+    }
+  }
+}
