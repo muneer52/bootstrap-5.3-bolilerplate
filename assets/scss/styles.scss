@@ -1,0 +1,410 @@
+@use "sass:math";
+
+//Library
+@import "node_modules/bourbon/core/_bourbon.scss";
+@import "libs/_rem.scss";
+// @import "libs/css3-mixins.scss";
+@import "libs/_custom.scss";
+@import "libs/decimal";
+
+@import "libs/_customvars";
+@import "libs/_fonts.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//Global Styles
+body {
+  // might not work on Firefox and Safari
+  @extend %css-scroll-bar;
+}
+
+
+
+// Short Classes
+
+.tmpnone {
+  display: none;
+}
+
+// for checking HTML structure on browser
+.outline {
+  outline: 1px red dotted;
+}
+
+.outline2 {
+  outline: 1px blue solid;
+}
+
+.outline-all,
+.outline-all * {
+  outline: 1px cyan dashed;
+}
+
+.float-center {
+  float: none !important;
+  display: table !important;
+  margin: 0 auto !important;
+}
+
+.wh-auto {
+  width: auto !important;
+  height: auto !important;
+}
+
+//Background Image Classes
+.nobg {
+  background: unset !important;
+}
+
+// both image and color will be unset
+
+.bgCover,
+.bgNoRepeat,
+.bgContain {
+  background-repeat: no-repeat !important;
+}
+
+.bgCover {
+  background-size: cover !important;
+}
+
+.bgContain {
+  background-size: contain !important;
+}
+
+.bgfixed-mobile {
+  background-attachment: fixed !important;
+}
+
+.bgscroll {
+  background-attachment: scroll !important;
+}
+
+.bgPosCenter {
+  background-position: center center !important;
+}
+
+.bgPosTopLeft {
+  background-position: top left !important;
+}
+
+.bgPosTopCenter {
+  background-position: top center !important;
+}
+
+.bgPosTopRight {
+  background-position: top right !important;
+}
+
+.bgPosBtmLeft {
+  background-position: bottom left !important;
+}
+
+.bgPosBtmCenter {
+  background-position: bottom center !important;
+}
+
+.bgPosBtmRight {
+  background-position: bottom right !important;
+}
+
+.bgPosLeftCenter {
+  background-position: left center !important;
+}
+
+.bgPosRightCenter {
+  background-position: right center !important;
+}
+
+/* Border radius */
+
+.nocvr {
+  @include border-radius(0 !important);
+}
+
+// todo: need to generate mixin [Start]
+// .brd-2 {
+//   @include border-radius(2px);
+// }
+
+// .brd-4 {
+//   @include border-radius(4px);
+// }
+
+// .brd-5 {
+//   @include border-radius(5px);
+// }
+
+// .brd-6 {
+//   @include border-radius(6px);
+// }
+
+// .brd-8 {
+//   @include border-radius(8px);
+// }
+
+// .cvr-tl-4 {
+//   @include border-radius-separate(4px, 0, 0, 0);
+// }
+// .cvr-tr-4 {
+//   @include border-radius-separate(0, 4px, 0, 0);
+// }
+// .cvr-bl-4 {
+//   @include border-radius-separate(0, 0, 4px, 0);
+// }
+// .cvr-br-4 {
+//   @include border-radius-separate(0, 0, 0, 4px);
+// }
+// .cvr-tl-8 {
+//   @include border-radius-separate(8px, 0, 0, 0);
+// }
+// .cvr-tr-8 {
+//   @include border-radius-separate(0, 8px, 0, 0);
+// }
+// .cvr-bl-8 {
+//   @include border-radius-separate(0, 0, 8px, 0);
+// }
+// .cvr-br-8 {
+//   @include border-radius-separate(0, 0, 0, 8px);
+// }
+// todo: need to generate mixin [END]
+
+/* Font Families */
+.ff-poppins {
+  font-family: $poppins;
+}
+.dfont {
+  font-family: $dfont;
+}
+.tfont {
+  font-family: $tfont;
+}
+.fontaw {
+  font-family: $fontaw;
+}
+
+// todo: Generate Mixing [Start]
+.fw-sm-normal {
+  @include media-breakpoint-down(md) {
+    font-weight: normal !important;
+  }
+}
+
+.fw-sm-semibold {
+  @include media-breakpoint-down(md) {
+    font-weight: $font-weight-semibold !important;
+  }
+}
+// todo: Generate Mixing [END]
+
+/* Mixing Generation */
+// todo: convert to mixin
+// Transitions
+.trans-2,
+.trans-2all,
+.trans-2all * {
+  @include transition($trans-2);
+}
+
+.trans-3,
+.trans-3all,
+.trans-3all * {
+  @include transition($trans-3);
+}
+
+.trans-4,
+.trans-4all,
+.trans-4all * {
+  @include transition($trans-4);
+}
+
+.trans-6,
+.trans-6all,
+.trans-6all * {
+  @include transition($trans-6);
+}
+
+.trans-8,
+.trans-8all,
+.trans-8all * {
+  @include transition($trans-8);
+}
+
+.trans-10,
+.trans-10all,
+.trans-10all * {
+  @include transition($trans-10);
+}
+
+.trans-12,
+.trans-12all,
+.trans-12all * {
+  @include transition($trans-12);
+}
+
+.trans-14,
+.trans-14all,
+.trans-14all * {
+  @include transition($trans-14);
+}
+
+.trans-16,
+.trans-16all,
+.trans-16all * {
+  @include transition($trans-16);
+}
+
+.trans-18,
+.trans-18all,
+.trans-18all * {
+  @include transition($trans-18);
+}
+
+.trans-20,
+.trans-20all,
+.trans-20all * {
+  @include transition($trans-20);
+}
+
+.trans-22,
+.trans-22all,
+.trans-22all * {
+  @include transition($trans-22);
+}
+
+
+//Other Fonts Colors Class
+@include AccentColorClass();
+@include AccentColorMobileClass();
+
+//Social Font Colors Class Generator
+@include socialColorClass();
+
+//theme Accent Color shades Auto Generator
+// @include themeAccentColorsShadesClass();
+
+/* Fonts Sizes*/
+//Font Class Generator
+@include fontSizeClass();
+
+@include media-breakpoint-down(md) {
+  //Padding and Margin Generator for Small Devices
+  @include fontSizeClass-sm();
+}
+
+@include media-breakpoint-down(xl) {
+  //Padding and Margin Generator for Medium Devices
+  @include fontSizeClass-md();
+}
+
+/* line height*/
+.lh-14 {
+  line-height: 1.4em !important;
+}
+
+.lh-16 {
+  line-height: 1.6em !important;
+}
+
+.lh-18 {
+  line-height: 1.8em !important;
+}
+
+.lh-24 {
+  line-height: rem(24px) !important;
+}
+
+//Padding and Margin Generator
+@include magpadClass();
+
+@include media-breakpoint-down(md) {
+  //Padding and Margin Generator for Small Devices
+  @include magpadClass-sm();
+}
+
+@include media-breakpoint-down(xl) {
+  //Padding and Margin Generator for Medium Devices
+  @include magpadClass-md();
+}
+
+/* Width Short Class */
+
+@include widthClass();
+
+@include media-breakpoint-down(md) {
+  @include widthClass-sm();
+}
+
+@include media-breakpoint-down(xl) {
+  @include widthClass-md();
+}
+
+// .btn {
+//   // @extend %button-style;
+
+//   //Base Theme Color Buttons
+//   &.btn-btcolor2,
+//   &.btn-secondary {
+//     color: $primary;
+//     // &:hover,
+//     // &.active,
+//     // &:focus {
+//     // }
+//   }
+
+//   //Base Theme Color Outline Buttons
+//   &.btn-btcolor2,
+//   &.btn-secondary {
+//     color: $primary;
+//     &:hover,
+//     &.active,
+//     &:focus {
+//       background: $primary;
+//       color: $white;
+//       border-color: $primary;
+//     }
+//   }
+//   &.btn-outline-secondary {
+//     // color:$primary;
+
+//     &:hover,
+//     &.active,
+//     &:focus {
+//       background: $primary;
+//       color: $white;
+//       border-color: $primary;
+//     }
+//   }
+
+//   &.btn-white {
+//     background: $white;
+//     color: $primary;
+//     &:hover,
+//     &.active,
+//     &:focus {
+//       background: $primary;
+//       color: $white;
+//       border-color: $primary;
+//     }
+//   }
+//   &.btn-outline-white {
+//     background: rgba($primary, 0);
+//     border-color: $primary;
+//     color: $primary;
+//     &:hover,
+//     &.active,
+//     &:focus {
+//       background: rgba($primary, 1);
+//       color: $white;
+//     }
+//   }
+// }
+//Button Styles [END]
+
+// Misc
+
+/* clears the 'X' from Internet Explorer */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
