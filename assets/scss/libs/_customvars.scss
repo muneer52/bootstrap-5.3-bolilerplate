@@ -1,3 +1,8 @@
+/*!
+ * 10pearls bootstrap boilerplate v5.3.1 (https://getbootstrap.com/)
+ * Author: Muhammad Munir (munir.saleem@10pearls.com)
+ */
+
 // $prefix:                      tp !default;
 
 // check more in bootstrap main file and modify them here
@@ -18,72 +23,127 @@ $enable-negative-margins: false;
 $enable-deprecation-messages: true;
 $enable-important-utilities: true;
 
-$enable-dark-mode: true;
+$enable-dark-mode: false;
 $color-mode-type: data; // `data` or `media-query`
+
+// extended classes
+//border-radius
+$enable-border-radius-extended: true;
+$enable-border-radius-extended-mbl: true; // $enable-border-radius-extended must be true
+
+// font sizes
+$enable-font-size-extended: true;
+$enable-font-size-extended-mbl: true; // $enable-font-size-extended must be true
+
+// font weight
+$enable-font-weight-extended-mbl: true;
+
+//margin and padding
+$enable-magpad-extended: true;
+$enable-mappad-extended-mbl: true; // $enable-magpad-extended must be true
+
+//width and padding
+$enable-magpad-extended: true;
+$enable-magpad-extended-mbl: true; // $enable-magpad-extended must be true
+
+// enable social media class
+$enable-social-colors: true;
 
 //Base Theme colors
 // suggestion: install VS code 'colorize' plugin
-$bt-primary: (
-  100: #ff9e00,
-  200: #ff9100,
-  300: #ff8500,
-  400: #ff6d00,
-  500: #ff5400,
-);
-
-$bt-secondary: (
-  100: #00b4d8,
-  200: #0096c7,
-  300: #0077b6,
-  400: #023e8a,
-  500: #03045e,
-);
-
-// Theme Accent Colors
-$bt-accent: (
-  50: #54478c,
-  100: #2c699a,
-  150: #048ba8,
-  200: #0db39e,
-  250: #16db93,
-  300: #83e377,
-  350: #b9e769,
-  400: #efea5a,
-  450: #f1c453,
-  500: #f29e4c,
-);
-
-// sample color set 2 [Start]
 // $bt-primary: (
-//   100: #F72585,
-//   200: #B5179E,
-//   300: #7209B7,
-//   400: #560BAD,
-//   500: #480CA8,
+//   100: #ff9e00,
+//   200: #ff9100,
+//   300: #ff8500,
+//   400: #ff6d00,
+//   500: #ff5400,
 // );
 
 // $bt-secondary: (
-//   100: #3A0CA3,
-//   200: #3F37C9,
-//   300: #4361EE,
-//   400: #4895EF,
-//   500: #4CC9F0,
+//   100: #00b4d8,
+//   200: #0096c7,
+//   300: #0077b6,
+//   400: #023e8a,
+//   500: #03045e,
 // );
 
 // // Theme Accent Colors
 // $bt-accent: (
-//   50: #001219,
-//   100: #005F73,
-//   150: #0A9396,
-//   200: #94D2BD,
-//   250: #E9D8A6,
-//   300: #EE9B00,
-//   350: #CA6702,
-//   400: #BB3E03,
-//   450: #AE2012,
-//   500: #9B2226,
+//   50: #54478c,
+//   100: #2c699a,
+//   150: #048ba8,
+//   200: #0db39e,
+//   250: #16db93,
+//   300: #83e377,
+//   350: #b9e769,
+//   400: #efea5a,
+//   450: #f1c453,
+//   500: #f29e4c,
 // );
+
+// sample color set 2 [Start]
+$bt-primary: (
+  100: #F72585,
+  200: #B5179E,
+  300: #7209B7,
+  400: #560BAD,
+  500: #480CA8,
+);
+
+$bt-secondary: (
+  100: #3A0CA3,
+  200: #3F37C9,
+  300: #4361EE,
+  400: #4895EF,
+  500: #4CC9F0,
+);
+
+// Theme Accent Colors
+$bt-accent: (
+  50: #001219,
+  100: #005F73,
+  150: #0A9396,
+  200: #94D2BD,
+  250: #E9D8A6,
+  300: #EE9B00,
+  350: #CA6702,
+  400: #BB3E03,
+  450: #AE2012,
+  500: #9B2226,
+);
 // sample color set 2 [END]
+
+// sample color set 3 [Start]
+// $bt-primary: (
+//   100: #072ac8,
+//   200: #1360e2,
+//   300: #1e96fc,
+//   400: #60b6fb,
+//   500: #a2d6f9,
+// );
+
+// $bt-secondary: (
+//   100: #cfe57d,
+//   200: #fcf300,
+//   300: #fedd00,
+//   400: #ffc600,
+//   500: #ffcb17,
+// );
+
+// // Theme Accent Colors
+// $bt-accent: (
+//   50: #2b2d42,
+//   100: #4e2c70,
+//   150: #702b9e,
+//   200: #b429f9,
+//   250: #9c43f8,
+//   300: #855df7,
+//   350: #6d77f6,
+//   400: #5591f5,
+//   450: #3eabf4,
+//   500: #26c5f3
+// );
+// sample color set 3 [END]
 
 
 
@@ -171,6 +231,19 @@ $theme-colors: (
   "bt-accent-400": map-get($bt-accent, 400),
   "bt-accent-450": map-get($bt-accent, 450),
   "bt-accent-500": map-get($bt-accent, 500),
+
+  //gray-shades
+  "white": $white,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  "black": $black
 );
 // scss-docs-end theme-colors-map
 
@@ -216,7 +289,7 @@ $trans-20: all 2s $ease-in-out-quad;
 $trans-22: all 2.2s $ease-in-out-quad;
 
 //Soical Colors
-$twitter: #55acee;
+$twitter: #000;
 $facebook: #1976d2;
 $googleplus: #dd4b39;
 $google: #518ef8;
@@ -252,8 +325,8 @@ $socialColors: (twitter, $twitter), (facebook, $facebook),
   (android, $android), (windows, $windows);
 
 //Fonts (Check _fonts.scss)
-//$proximaNova  :$proximaNova, sans-serif;
-$poppins: "Poppins", sans-serif;
+$primary-font-family: #{$poppins}, sans-serif;
+$secondary-font-family: #{$lato}, sans-serif;
 
 //defualt fonts
 $dfont: Arial, Helvetica, sans-serif !important;
@@ -262,12 +335,12 @@ $tfont: "Times New Roman", Georgia, Serif !important;
 $fontaw: "Font Awesome\ 5 Free";
 
 // Typography
-$font-size-base: rem(16px); //bootstrap 5 overwrite
+$font-size-base: rem(16); //bootstrap 5 overwrite
 $bfsize: $font-size-base; //alias
 $bfweight: normal;
 
 //Font Family
-$font-family-base: $poppins; //bootstrap 5 overwrite
+$font-family-base: $primary-font-family; //bootstrap 5 overwrite
 $bffamily: $font-family-base; //alias
 
 $font-size-root: null !default;
@@ -328,7 +401,7 @@ $input-btn-font-size-lg: $font-size-lg !default;
 
 // Form
 $form-select-font-weight: $font-weight-semibold;
-$form-select-line-height: rem(24px);
+$form-select-line-height: rem(24);
 $form-select-color: $primary;
 // $form-select-bg: $gray-100;
 $form-select-border-width: 0;
@@ -373,7 +446,7 @@ $font-weight-semibold: $font-weight-semibold;
 
 // Heading
 // $headings-margin-bottom:      $spacer * .5 !default;
-$headings-font-family: null !default;
+$headings-font-family: $secondary-font-family !default;
 $headings-font-style: null !default;
 $headings-font-weight: 600 !default;
 $headings-line-height: 1.2 !default;
@@ -383,10 +456,10 @@ $hdffamily: $headings-font-family; //alias
 $hdfweight: $headings-font-weight;
 $hdColor: $headings-color;
 
-$hd1: $bfsize + rem(32px); //48px
-$hd2: $bfsize + rem(16px); //32px
-$hd3: $bfsize + rem(6px); //22px
-$hd4: $bfsize + rem(2px); //18px
+$hd1: $bfsize + rem(32); //48px
+$hd2: $bfsize + rem(16); //32px
+$hd3: $bfsize + rem(6); //22px
+$hd4: $bfsize + rem(2); //18px
 $hd5: $bfsize; //16px
 $hd6: $bfsize; //16px
 
@@ -404,17 +477,21 @@ $headings-font-weight: $hdfweight;
 // $headings-line-height:        1.2 !default;
 // $headings-color:              null !default;
 
-//font sizes for short class
+//font sizes and line-height for short class
 $fontSizes: (
-  8, 9, 10, 11, 12, 13, 14, 16, 18, 19, 20, 22, 24, 25, 26, 27, 28, 30, 32, 34, 36, 38, 40, 45, 48, 50, 56, 60, 64, 65, 70, 72, 75, 80
+  0, 8, 9, 10, 11, 12, 13, 14, 16, 18, 19, 20, 22, 24, 25, 26, 27, 28, 30, 32, 34, 36, 38, 40, 45, 48, 50, 56, 60, 64, 65, 70, 72, 75, 80
 );
 //Margin/Padding
 $magpads: (
-  0, 2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15, 16, 18, 20, 22, 24, 25, 26, 28, 30, 32, 35, 40, 45, 48, 50, 55, 57, 60, 64, 65, 70, 71, 72, 73, 75, 80, 85, 90, 95, 100, 105, 110, 115, 116, 117, 118, 119, 120, 125, 130, 135, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180
+  2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15, 16, 18, 20, 22, 24, 25, 26, 28, 30, 32, 35, 40, 45, 48, 50, 55, 57, 60, 64, 65, 70, 71, 72, 73, 75, 80, 85, 90, 95, 100, 105, 110, 115, 116, 117, 118, 119, 120, 125, 130, 135, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180
 );
 //Width
-$widths: ( 32, 40, 60, 64, 80, 95, 96, 100, 105, 120, 140, 160, 180, 210, 250, 270, 280, 380, 400, 420, 480, 500, 620, 650, 670
+$widths: (
+  32, 40, 60, 64, 80, 95, 96, 100, 105, 120, 140, 160, 180, 200, 230, 240, 250, 270, 280, 300, 360, 380, 400, 420, 480, 500, 620, 650, 670
 );
+
+// border radius
+$borderRadius: (0, 2, 4, 5, 6, 8, 10, 12, 14, 16, 18, 20, 200);
 
 // Grid breakpoints
 //
@@ -423,9 +500,9 @@ $widths: ( 32, 40, 60, 64, 80, 95, 96, 100, 105, 120, 140, 160, 180, 210, 250, 2
 $grid-breakpoints: (
   xs: 0,
   sm: 532px,
-  md: 768px,
+  md: 991px,
   lg: 992px,
-  pxl: 1280px,
+  pxl: 1280px, //for pixel zoom screens
   xl: 1440px,
   xxl: 1920px,
 ) !default;
@@ -446,7 +523,7 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 $grid-columns: 12 !default;
-$grid-gutter-width: rem(16px) !default;
+$grid-gutter-width: rem(16) !default;
 
 // popover
 // $popover-font-size:                 $font-size-sm !default;
@@ -473,6 +550,7 @@ $grid-gutter-width: rem(16px) !default;
 
 $transition-base: $trans-3;
 
+// $spacer: 1rem !default;
 // $spacers: (
 //   0: 0,
 //   1: $spacer * .25,
@@ -483,7 +561,7 @@ $transition-base: $trans-3;
 // ) !default;
 
 // scss-docs-start breadcrumb-variables
-$breadcrumb-font-size: rem(18px) !default;
+$breadcrumb-font-size: rem(18) !default;
 $breadcrumb-padding-y: $grid-gutter-width !default;
 // $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding-x: $grid-gutter-width !default;
@@ -526,8 +604,8 @@ $breadcrumb-divider-flipped: $breadcrumb-divider !default;
 // $nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
 
 // scss-docs-start form-input-variables
-$input-padding-y: rem(14px);
-$input-padding-x: rem(16px);
+$input-padding-y: rem(14);
+$input-padding-x: rem(16);
 
 $input-padding-y-sm: $input-padding-y;
 $input-padding-x-sm: $input-padding-x;
@@ -569,8 +647,8 @@ $modal-backdrop-opacity: 0.85 !default;
 // offcanvas
 $offcanvas-horizontal-width: 584px;
 // $offcanvas-vertical-height: 738px;
-$offcanvas-padding-y: rem(24px);
-$offcanvas-padding-x: rem(24px);
+$offcanvas-padding-y: rem(24);
+$offcanvas-padding-x: rem(24);
 $zindex-offcanvas: 1051;
 
 // scss-docs-start toast-variables

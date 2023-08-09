@@ -11,92 +11,20 @@
   <meta name="generator" content="Hugo 0.112.5">
   <title>Brand-guide · Bootstrap v5.3</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16x16.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
+
   <link href="./../assets/css/styles.css" rel="stylesheet" />
 
-  <!-- Brand Guide page related styles only [Start] -->
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .b-example-divider {
-      width: 100%;
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
-
-    .bd-mode-toggle {
-      z-index: 1500;
-    }
-  </style>
-  <!-- Brand Guide page related styles only [END] -->
-
   <!-- Custom styles for this template -->
-  <link href="cheatsheet.css" rel="stylesheet">
+  <link href="brandguide.css" rel="stylesheet">
 </head>
 
 <body class="bg-body-tertiary">
@@ -122,26 +50,26 @@
   </svg>
 
   <!-- Header [Start] -->
-  <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
-    <div class="container-fluid d-flex align-items-center">
+  <header class="bd-header bg-bt-primary-400 py-3 d-flex align-items-stretch border-bottom border-dark">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
       <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-        Brand-guide
+        Brand Guide
       </h1>
-      <a href="//getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" class="ms-auto link-light">Go
-        to Bootstrap 5.3 Documentation</a>
+
+      <a href="//getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"
+        class="btn btn-light fs-12px">Goto Bootstrap 5.3</a>
     </div>
   </header>
   <!-- Header [END] -->
   <!-- Sidebar [Start] -->
-  <aside class="bd-aside sticky-xl-top text-body-secondary align-self-start mb-3 mb-xl-5 px-2">
-    <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
+  <aside class="bd-aside sticky-xl-top text-bg-gray-100 align-self-start px-2 h-100vh overflow-auto">
     <nav class="small" id="toc">
       <ul class="list-unstyled">
         <li class="my-2">
           <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse"
-            aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Colors
+            aria-expanded="false" data-bs-target="#pallet-collapse" aria-controls="pallet-collapse">Colors
             Pallet</button>
-          <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+          <ul class="list-unstyled ps-3 collapse" id="pallet-collapse">
             <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
                 href="#colorplattes-primary">Primary</a></li>
             <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
@@ -220,47 +148,101 @@
             </li>
           </ul>
         </li>
+
+
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse"
+            aria-expanded="false" data-bs-target="#Extended-collapse" aria-controls="Extended-collapse">Extended
+            Classes</button>
+          <ul class="list-unstyled ps-3 collapse" id="Extended-collapse">
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#rwd-font-size">Responsive Font sizes</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#rwd-font-weight">Responsive Font weights</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#border-radius-info">Border Radius</a></li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#width-info">Responsive
+                Width</a></li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#spacing-info">Responsive
+                Spacing</a></li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#background-pos-info">Background Positions</a></li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#social-info">Social
+                Media Classes</a></li>
+          </ul>
+        </li>
+
+        <li class="my-2">
+          <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse"
+            aria-expanded="false" data-bs-target="#mixing-collapse" aria-controls="mixing-collapse">Mixing</button>
+          <ul class="list-unstyled ps-3 collapse" id="mixing-collapse">
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#mixin-px-rem">PX into
+                REM</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#mixin-center-pos">Center
+                Position Align</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#mixin-square">Width /
+                height / border-radius</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </aside>
   <!-- Sidebar [END] -->
   <!-- Content Wrapper [Start] -->
-  <div class="bd-cheatsheet container-fluid bg-body">
+  <div data-bs-spy="scroll" data-bs-target="#toc" data-bs-smooth-scroll="true"
+    class="bd-cheatsheet container-fluid bg-body">
+    <!-- Content [Start] -->
     <section id="content">
-      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contents</h2>
+      <h2 class="sticky-md-top fw-bold pt-3 pt-xl-5 pb-2">Basic Setup</h2>
 
+      <!-- Typography [Start] -->
       <article class="my-3" id="typography">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2" id="colorplattes-primary">
-          <h3>Color Pallets</h3>
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          id="colorplattes-primary pt-xl-5">
+          <h3 class="pt-3">Color Pallets</h3>
         </div>
 
         <div>
           <div>
             <h3>Theme Primary Color Pallets</h3>
-            <div class="d-flex flex-wrap gap-3">
-              <div class="col-2 card text-bg-bt-primary-100 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-primary-100
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-primary-100 mb-3">
+                  <div class="card-body">
+                    bt-primary-100
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-primary-200 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-primary-200
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-primary-200 mb-3">
+                  <div class="card-body">
+                    bt-primary-200
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-primary-300 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-primary-300
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-primary-300 mb-3">
+                  <div class="card-body">
+                    bt-primary-300
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-primary-400 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-primary-400
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-primary-400 mb-3">
+                  <div class="card-body">
+                    bt-primary-400
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-primary-500 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-primary-500
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-primary-500 mb-3">
+                  <div class="card-body">
+                    bt-primary-500
+                  </div>
                 </div>
               </div>
             </div>
@@ -269,88 +251,209 @@
           <hr id="colorplattes-secondary">
           <div>
             <h3>Theme secondary Color Pallets</h3>
-            <div class="d-flex flex-wrap gap-3">
-              <div class="col-2 card text-bg-bt-secondary-100 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-secondary-100
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-secondary-100 mb-3">
+                  <div class="card-body">
+                    bt-secondary-100
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-secondary-200 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-secondary-200
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-secondary-200 mb-3">
+                  <div class="card-body">
+                    bt-secondary-200
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-secondary-300 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-secondary-300
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-secondary-300 mb-3">
+                  <div class="card-body">
+                    bt-secondary-300
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-secondary-400 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-secondary-400
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-secondary-400 mb-3">
+                  <div class="card-body">
+                    bt-secondary-400
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-secondary-500 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-secondary-500
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-secondary-500 mb-3">
+                  <div class="card-body">
+                    bt-secondary-500
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <hr  id="colorplattes-accent">
+          <hr id="colorplattes-accent">
           <div>
             <h3>Theme accent Color Pallets</h3>
-            <div class="d-flex flex-wrap gap-3">
-              <div class="col-2 card text-bg-bt-accent-50 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-50
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-50 mb-3">
+                  <div class="card-body">
+                    bt-accent-50
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-100 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-100
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-300 mb-3">
+                  <div class="card-body">
+                    bt-accent-100
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-150 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-150
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-150 mb-3">
+                  <div class="card-body">
+                    bt-accent-150
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-200 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-200
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-200 mb-3">
+                  <div class="card-body">
+                    bt-accent-200
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-250 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-250
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-250 mb-3">
+                  <div class="card-body">
+                    bt-accent-250
+                  </div>
                 </div>
               </div>
 
-              <div class="col-2 card text-bg-bt-accent-300 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-300
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-300 mb-3">
+                  <div class="card-body">
+                    bt-accent-300
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-350 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-350
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-350 mb-3">
+                  <div class="card-body">
+                    bt-accent-350
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-400 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-400
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-400 mb-3">
+                  <div class="card-body">
+                    bt-accent-400
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-450 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-450
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-450 mb-3">
+                  <div class="card-body">
+                    bt-accent-450
+                  </div>
                 </div>
               </div>
-              <div class="col-2 card text-bg-bt-accent-500 mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  bt-accent-500
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-bt-accent-500 mb-3">
+                  <div class="card-body">
+                    bt-accent-500
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr id="colorplattes-accent">
+          <div>
+            <h3>Gray Shades / Neutral Shades</h3>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-white mb-3">
+                  <div class="card-body">
+                    white
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-100 mb-3">
+                  <div class="card-body">
+                    gray-100
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-200 mb-3">
+                  <div class="card-body">
+                    gray-200
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-200 mb-3">
+                  <div class="card-body">
+                    gray-200
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-300 mb-3">
+                  <div class="card-body">
+                    gray-300
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-400 mb-3">
+                  <div class="card-body">
+                    gray-400
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-500 mb-3">
+                  <div class="card-body">
+                    gray-500
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-600 mb-3">
+                  <div class="card-body">
+                    gray-600
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-700 mb-3">
+                  <div class="card-body">
+                    gray-700
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-800 mb-3">
+                  <div class="card-body">
+                    gray-800
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-gray-900 mb-3">
+                  <div class="card-body">
+                    gray-900
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card text-bg-black mb-3">
+                  <div class="card-body">
+                    black
+                  </div>
                 </div>
               </div>
             </div>
@@ -359,7 +462,7 @@
           <h3>More Detail Usage</h3>
 
           <div class="alert alert-info" role="alert">
-            All css variables for above color is also avialabel in html:root. check with dev tool 
+            All css variables for above color is also avialabel in html:root. check with dev tool
           </div>
 
 
@@ -707,13 +810,27 @@
         </div>
       </article>
 
-
       <article class="my-3" id="typography">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Typography</h3>
         </div>
 
         <div>
+
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <p class="display-3">Base font Family <br> - Poppins</p>
+              <div class="alert alert-info">
+                Check <code>$primary-font-family</code> for updated font family
+              </div>
+              <hr class="my-4" />
+              <h2>Base Heading font Family <br> - Lato</h2>
+              <div class="alert alert-info">
+                Check <code>$secondary-font-family</code> for updated heading font family
+              </div>
+            </div>
+          </div>
+          <hr />
           <div class="bd-example-snippet bd-code-snippet">
             <div class="bd-example m-0 border-0">
               <p class="display-1">Display 1</p>
@@ -811,8 +928,11 @@
 
         </div>
       </article>
+      <!-- Typography [END] -->
+
+      <!-- Images [Start] -->
       <article class="my-3" id="images">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Images</h3>
         </div>
 
@@ -846,8 +966,11 @@
 
         </div>
       </article>
+      <!-- Images [END] -->
+
+      <!-- Tables [Start] -->
       <article class="my-3" id="tables">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Tables</h3>
         </div>
 
@@ -1021,8 +1144,11 @@
 
         </div>
       </article>
+      <!-- Tables [Start] -->
+
+      <!-- Figures [Start] -->
       <article class="my-3" id="figures">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Figures</h3>
         </div>
 
@@ -1044,13 +1170,17 @@
 
         </div>
       </article>
+      <!-- Figures [END] -->
     </section>
+    <!-- Content [END] -->
 
+    <!-- Forms [Start] -->
     <section id="forms">
-      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Forms</h2>
+      <h2 class="sticky-md-top fw-bold pt-3 pt-xl-5 pb-2">Forms</h2>
 
+      <!-- Form Overview [Start]-->
       <article class="my-3" id="overview">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Overview</h3>
         </div>
 
@@ -1110,8 +1240,11 @@
 
         </div>
       </article>
+      <!-- Form Overview [END]-->
+
+      <!-- Disable Form Overview [Start]-->
       <article class="my-3" id="disabled-forms">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Disabled forms</h3>
         </div>
 
@@ -1171,8 +1304,11 @@
 
         </div>
       </article>
+      <!-- Disable Form Overview [END]-->
+
+      <!-- Sizing [Start] -->
       <article class="my-3" id="sizing">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Sizing</h3>
         </div>
 
@@ -1220,8 +1356,11 @@
 
         </div>
       </article>
+      <!-- Sizing [END] -->
+
+      <!-- Input group [Start] -->
       <article class="my-3" id="input-group">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Input group</h3>
         </div>
 
@@ -1257,8 +1396,11 @@
 
         </div>
       </article>
+      <!-- Input group [END] -->
+
+      <!-- Floating labels [Start] -->
       <article class="my-3" id="floating-labels">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Floating labels</h3>
         </div>
 
@@ -1280,8 +1422,11 @@
 
         </div>
       </article>
+      <!-- Floating labels [END] -->
+
+      <!-- Validation [Start] -->
       <article class="my-3" id="validation">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Validation</h3>
         </div>
 
@@ -1358,13 +1503,17 @@
 
         </div>
       </article>
+      <!-- Validation [END] -->
     </section>
+    <!-- Forms [END] -->
 
+    <!-- Components [Start] -->
     <section id="components">
-      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Components</h2>
+      <h2 class="sticky-md-top fw-bold pt-3 pt-xl-5 pb-2">Components</h2>
 
+      <!-- accordion [Start] -->
       <article class="my-3" id="accordion">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Accordion</h3>
         </div>
 
@@ -1432,8 +1581,11 @@
 
         </div>
       </article>
+      <!-- accordion [END] -->
+
+      <!-- alerts [Start] -->
       <article class="my-3" id="alerts">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Alerts</h3>
         </div>
 
@@ -1499,8 +1651,11 @@
 
         </div>
       </article>
+      <!-- alerts [END] -->
+
+      <!-- badge [Start] -->
       <article class="my-3" id="badge">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Badge</h3>
         </div>
 
@@ -1535,8 +1690,11 @@
 
         </div>
       </article>
+      <!-- badge [END] -->
+
+      <!-- breadcrumb [Start] -->
       <article class="my-3" id="breadcrumb">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Breadcrumb</h3>
         </div>
 
@@ -1555,8 +1713,11 @@
 
         </div>
       </article>
+      <!-- breadcrumb [END] -->
+
+      <!-- buttons [Start] -->
       <article class="my-3" id="buttons">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Buttons</h3>
         </div>
 
@@ -1603,8 +1764,11 @@
 
         </div>
       </article>
+      <!-- buttons [END] -->
+
+      <!-- button-group [Start] -->
       <article class="my-3" id="button-group">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Button group</h3>
         </div>
 
@@ -1632,8 +1796,11 @@
 
         </div>
       </article>
+      <!-- button-group [END] -->
+
+      <!-- card [Start] -->
       <article class="my-3" id="card">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Card</h3>
         </div>
 
@@ -1720,145 +1887,180 @@
           </div>
 
           <h2>More Card styles</h2>
-          <div class="d-flex gap-3 flex-wrap">
-            <div class="card col-1 col-md-3 text-bg-primary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Primary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+          <div class="row flex-wrap flex-column flex-md-row">
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-primary mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 text-bg-secondary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-secondary mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Secondary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 text-bg-success mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Success card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-success mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Success card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 text-bg-danger mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Danger card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-danger mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Danger card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 text-bg-warning mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Warning card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-warning mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Warning card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 text-bg-info mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-info mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Info card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 text-bg-light mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-light mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Light card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 text-bg-dark mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Dark card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-dark mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Dark card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
           </div>
 
           <h3>Outline Style</h3>
-          <div class="d-flex gap-3 flex-wrap">
-            <div class="card col-1 col-md-3 border-primary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body text-primary">
-                <h5 class="card-title">Primary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+          <div class="row flex-wrap flex-column flex-md-row">
+            <div class="col-12 col-md-4">
+              <div class="card border-primary mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body text-primary">
+                  <h5 class="card-title">Primary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 border-secondary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body text-secondary">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card border-secondary mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body text-secondary">
+                  <h5 class="card-title">Secondary card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 border-success mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body text-success">
-                <h5 class="card-title">Success card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card border-success mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body text-success">
+                  <h5 class="card-title">Success card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 border-danger mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body text-danger">
-                <h5 class="card-title">Danger card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card border-danger mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body text-danger">
+                  <h5 class="card-title">Danger card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 border-warning mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Warning card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card border-warning mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Warning card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 border-info mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card border-info mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Info card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 border-light mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card border-light mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Light card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
-            <div class="card col-1 col-md-3 border-dark mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Dark card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+            <div class="col-12 col-md-4">
+              <div class="card border-dark mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Dark card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
           </div>
 
         </div>
       </article>
+      <!-- card [END] -->
+
+      <!-- carousel [Start] -->
       <article class="my-3" id="carousel">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Carousel</h3>
         </div>
 
@@ -1931,8 +2133,11 @@
 
         </div>
       </article>
+      <!-- carousel [END] -->
+
+      <!-- dropdowns [Start] -->
       <article class="my-3" id="dropdowns">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Dropdowns</h3>
         </div>
 
@@ -2165,8 +2370,11 @@
 
         </div>
       </article>
+      <!-- dropdowns [END] -->
+
+      <!-- list-group [Start] -->
       <article class="my-3" id="list-group">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>List group</h3>
         </div>
 
@@ -2224,8 +2432,11 @@
 
         </div>
       </article>
+      <!-- list-group [END] -->
+
+      <!-- modal [Start] -->
       <article class="my-3" id="modal">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Modal</h3>
         </div>
 
@@ -2255,8 +2466,11 @@
 
         </div>
       </article>
+      <!-- modal [END] -->
+
+      <!-- navs [Start] -->
       <article class="my-3" id="navs">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Navs</h3>
         </div>
 
@@ -2333,8 +2547,11 @@
 
         </div>
       </article>
+      <!-- navs [END] -->
+
+      <!-- navbar [Start] -->
       <article class="my-3" id="navbar">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Navbar</h3>
         </div>
 
@@ -2435,8 +2652,11 @@
 
         </div>
       </article>
+      <!-- navbar [END] -->
+
+      <!-- pagination [Start] -->
       <article class="my-3" id="pagination">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Pagination</h3>
         </div>
 
@@ -2501,8 +2721,11 @@
 
         </div>
       </article>
+      <!-- pagination [END] -->
+
+      <!-- popovers [Start] -->
       <article class="my-3" id="popovers">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Popovers</h3>
         </div>
 
@@ -2539,8 +2762,11 @@
 
         </div>
       </article>
+      <!-- popovers [END] -->
+
+      <!-- progress [Start] -->
       <article class="my-3" id="progress">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Progress</h3>
         </div>
 
@@ -2588,8 +2814,11 @@
 
         </div>
       </article>
+      <!-- progress [END] -->
+
+      <!-- scrollspy [Start] -->
       <article class="my-3" id="scrollspy">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Scrollspy</h3>
         </div>
 
@@ -2644,8 +2873,11 @@
           </div>
         </div>
       </article>
+      <!-- scrollspy [END] -->
+
+      <!-- spinners [Start] -->
       <article class="my-3" id="spinners">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Spinners</h3>
         </div>
 
@@ -2713,8 +2945,11 @@
 
         </div>
       </article>
+      <!-- spinners [END] -->
+
+      <!-- toasts [Start] -->
       <article class="my-3" id="toasts">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Toasts</h3>
         </div>
 
@@ -2740,8 +2975,11 @@
 
         </div>
       </article>
-      <article class="mt-3 mb-5 pb-5" id="tooltips">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+      <!-- toasts [END] -->
+
+      <!-- tooltips [Start] -->
+      <article class="my-3 mb-5 pb-5" id="tooltips">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
           <h3>Tooltips</h3>
         </div>
 
@@ -2763,11 +3001,705 @@
 
         </div>
       </article>
+      <!-- tooltips [END] -->
     </section>
+    <!-- Components [END] -->
+
+    <!-- Extended Classes [Start] -->
+    <section id="extended-classes">
+      <h2 class="sticky-md-top fw-bold pt-3 pt-xl-5 pb-2">Extended Classes</h2>
+
+      <!-- Responsie Font Sizes [Start] -->
+      <article class="my-3" id="rwd-font-size">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Responsie Font Sizes</h3>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p>You can use different font-size and as well in responsive view also. Available sizes are as following
+              </p>
+
+              <pre
+                class="text-bg-gray-300 p-3 brd-8 text-wrap">0, 8, 9, 10, 11, 12, 13, 14, 16, 18, 19, 20, 22, 24, 25, 26, 27, 28, 30, 32, 34, 36, 38, 40, 45, 48, 50, 56, 60, 64, 65, 70, 72, 75, 80</pre>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body fs-xs-14px fs-sm-16px fs-md-20px fs-25px">
+              This is some text within a card body. With font size of
+              <ul>
+                <li>
+                  <span class="fw-xs-bold">14px in Mobile / .fs-xs-14px</span>
+                </li>
+                <li>
+                  <span class="fw-sm-bold fw-xs-normal">16px in Tablet / .fs-sm-16px</span>
+                </li>
+                <li>
+                  <span class="fw-md-bold fw-sm-normal">20px in medium Laptop / .fs-md-20px</span>
+                </li>
+                <li><span class="fw-bold fw-md-normal">25px in Larger screen / .fs-25px</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="mb-0">Code</h5>
+            <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10">
+              <div class="card-body fs-xs-14px fs-sm-16px fs-md-20px fs-25px">
+                This is some text within a card body. With font size of
+                <ul>
+                  <li>
+                    <span class="fw-xs-bold">14px in Mobile</span>
+                  </li>
+                  <li>
+                    <span class="fw-sm-bold fw-xs-normal">16px in Tablet</span>
+                  </li>
+                  <li>
+                    <span class="fw-md-bold fw-sm-normal">20px in medium Laptop</span>
+                  </li>
+                  <li><span class="fw-bold fw-md-normal">25px in Larger screen</span></li>
+                </ul>
+              </div>
+            </textarea>
+          </div>
+        </div>
+      </article>
+      <!-- Responsie Font Sizes [END] -->
+
+      <!-- Responsie Font Weight [Start] -->
+      <article class="my-3" id="rwd-font-weight">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Responsie Font Weight</h3>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-body">
+              This is some text within a card body. With font weight of
+              <ul>
+                <li>
+                  <span class="fw-xs-normal">font weight normal in mobile / .fw-xs-normal</span>
+                </li>
+                <li>
+                  <span class="fw-sm-bold fw-xs-normal">font weight bold in tablet / .fw-sm-bold .fw-xs-normal</span>
+                </li>
+                <li>
+                  <span class="fw-md-semibold fw-sm-normal">font weight semi-bold in medium laptop / .fw-md-semibold
+                    .fw-sm-normal</span>
+                </li>
+                <li><span class="fw-bolder fw-md-normal">font weight bolder in Larger screen / .fw-bolder
+                    .fw-md-normal</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="mb-0">Code</h5>
+            <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body. With font weight of
+                  <ul>
+                    <li>
+                      <span class="fw-xs-normal">font weight normal in mobile</span>
+                    </li>
+                    <li>
+                      <span class="fw-sm-bold fw-xs-normal">font weight bold in tablet</span>
+                    </li>
+                    <li>
+                      <span class="fw-md-semibold fw-sm-normal">font weight semi-bold in medium laptop</span>
+                    </li>
+                    <li><span class="fw-bolder fw-md-normal">font weight bolder in Larger screen</span></li>
+                  </ul>
+                </div>
+              </div>
+            </textarea>
+          </div>
+        </div>
+      </article>
+      <!-- Responsie Font Weight [END] -->
+
+      <!-- Border Radius info [Start] -->
+      <article class="my-3" id="border-radius-info">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Border Radius Info</h3>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-semibold">Border radius with following value are available, which we can also as different
+                border radius for responsive</p>
+
+              <pre class="text-bg-gray-300 p-3 brd-8 text-wrap">0, 2, 4, 5, 6, 8, 10, 12, 14, 16, 18, 20, 200</pre>
+
+              <div class="brd-12 brd-xs-10 brd-sm-16 brd-md-18 p-3 mt-3 text-bg-gray-300">
+                Border of this HTML element is
+                <ul>
+                  <li>
+                    <span class="fw-xs-bold">border radius 10px in Mobile / .brd-xs-10</span>
+                  </li>
+                  <li>
+                    <span class="fw-sm-bold fw-xs-normal">border radius 16px in Tablet / .brd-sm-16</span>
+                  </li>
+                  <li>
+                    <span class="fw-md-bold fw-sm-normal">border radius 18px in Medium Laptop / .brd-ms-18</span>
+                  </li>
+                  <li><span class="fw-bold fw-md-normal">border radius 12px in Larger Screen / .brd-12</span></li>
+                </ul>
+              </div>
+
+
+              <div class="mt-3">
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10">
+                  <ul>
+                    <li>
+                      <span class="fw-xs-bold">border radius 10px in Mobile / .brd-xs-10</span>
+                    </li>
+                    <li>
+                      <span class="fw-sm-bold fw-xs-normal">border radius 16px in Tablet / .brd-sm-16</span>
+                    </li>
+                    <li>
+                      <span class="fw-md-bold fw-sm-normal">border radius 18px in Medium Laptop / .brd-ms-18</span>
+                    </li>
+                    <li><span class="fw-bold fw-md-normal">border radius 12px in Larger Screen / .brd-12</span></li>
+                  </ul>
+                </textarea>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+      <!-- Border Radius info [END] -->
+
+      <!-- Responsive Width [Start] -->
+      <article class="my-3" id="width-info">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Responsive Width</h3>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-bold">Width and Height with following value are available, which can also is as different
+                border radius for responsive</p>
+
+              <pre
+                class="text-bg-gray-300 p-3 brd-8 text-wrap">32, 40, 60, 64, 80, 95, 96, 100, 105, 120, 140, 160, 180, 200, 230, 240, 250, 270, 280, 300, 360, 380, 400, 420, 480, 500, 620, 650, 670</pre>
+
+              <div class="w-380px w-xs-200px w-sm-240px w-md-270px text-bg-gray-300 p-3">
+                Width of this HTML element is
+                <ul>
+                  <li>
+                    <span class="fw-xs-bold">Width in Mobile / .w-xs-200px</span>
+                  </li>
+                  <li>
+                    <span class="fw-sm-bold fw-xs-normal">Width in Tablet / .w-sm-240px</span>
+                  </li>
+                  <li>
+                    <span class="fw-md-bold fw-sm-normal">Width in Medium Laptop / .w-md-270px</span>
+                  </li>
+                  <li><span class="fw-bold fw-md-normal">Width in larger screen / w-380px</span></li>
+                </ul>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10" aria-label="code">
+                  <div class="w-380px w-xs-200px w-sm-240px w-md-270px text-bg-gray-300 p-3">
+                    Width of this HTML element is
+                    <ul>
+                      <li>
+                        <span class="fw-xs-bold">Width in Mobile / .w-xs-200px</span>
+                      </li>
+                      <li>
+                        <span class="fw-sm-bold fw-xs-normal">Width in Tablet / .w-sm-240px</span>
+                      </li>
+                      <li>
+                        <span class="fw-md-bold fw-sm-normal">Width in Medium Laptop / .w-md-270px</span>
+                      </li>
+                      <li><span class="fw-bold fw-md-normal">Width in larger screen / w-380px</span></li>
+                    </ul>
+                  </div>
+                </textarea>
+              </div>
+
+              <h4 class="mt-4 fw-semibold">Same goes with height</h4>
+
+              <div class="h-380px h-xs-200px h-sm-240px h-md-270px text-bg-gray-300 p-3">
+                Height of this HTML element is
+                <ul>
+                  <li>
+                    <span class="fw-xs-bold">Height in Mobile / .w-xs-200px</span>
+                  </li>
+                  <li>
+                    <span class="fw-sm-bold fw-xs-normal">Height in Tablet / .w-sm-240px</span>
+                  </li>
+                  <li>
+                    <span class="fw-md-bold fw-sm-normal">Height in Medium Laptop / .w-md-270px</span>
+                  </li>
+                  <li><span class="fw-bold fw-md-normal">Height in larger screen / w-380px</span></li>
+                </ul>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10" aria-label="code">
+                  <div class="h-380px h-xs-200px h-sm-240px h-md-270px text-bg-gray-300 p-3">
+                    Width of this HTML element is
+                    <ul>
+                      <li>
+                        <span class="fw-xs-bold">Height in Mobile / .w-xs-200px</span>
+                      </li>
+                      <li>
+                        <span class="fw-sm-bold fw-xs-normal">Height in Tablet / .w-sm-240px</span>
+                      </li>
+                      <li>
+                        <span class="fw-md-bold fw-sm-normal">Height in Medium Laptop / .w-md-270px</span>
+                      </li>
+                      <li><span class="fw-bold fw-md-normal">Height in larger screen / w-380px</span></li>
+                    </ul>
+                  </div>
+                </textarea>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+      <!-- Responsive Width [END] -->
+
+      <!-- Spacing info [Start] -->
+      <article class="my-3" id="spacing-info">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Spacing Info</h3>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-bold">Padding and Margin with following value are available, which can also is as different
+                border radius for responsive</p>
+
+              <p>Spacing classes have same pattern as we have in boostrap e.g p-5. But in most of design practices
+                spaces vary according to the specific required, and to cover those requirement check the following
+                example. The classes are named using the format <code>{property}{sides}-{size}px</code> for xs and
+                <code>{property}{sides}-{breakpoint}-{size}px</code> for sm, md, lg.
+              </p>
+
+              <pre
+                class="text-bg-gray-300 p-3 brd-8 text-wrap">2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15, 16, 18, 20, 22, 24, 25, 26, 28, 30, 32, 35, 40, 45, 48, 50, 55, 57, 60, 64, 65, 70, 71, 72, 73, 75, 80, 85, 90, 95, 100, 105, 110, 115, 116, 117, 118, 119, 120, 125, 130, 135, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180</pre>
+
+              <div class="p-50px p-xs-5px p-sm-10px p-md-20px text-bg-gray-300 p-3">
+                Padding of this HTML element is
+                <ul>
+                  <li>
+                    <span class="fw-xs-bold">Padding in Mobile / .p-xs-5px</span>
+                  </li>
+                  <li>
+                    <span class="fw-sm-bold fw-xs-normal">Padding in Tablet / .p-sm-10px</span>
+                  </li>
+                  <li>
+                    <span class="fw-md-bold fw-sm-normal">Padding in Medium Laptop / .p-md-20px</span>
+                  </li>
+                  <li><span class="fw-bold fw-md-normal">Padding in larger screen / .p-50px</span></li>
+                </ul>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10" aria-label="code">
+                  <div class="p-50px p-xs-5px p-sm-10 p-md-20px text-bg-gray-300 p-3">
+                    Padding of this HTML element is
+                    <ul>
+                      <li>
+                        <span class="fw-xs-bold">Padding in Mobile / .p-xs-5px</span>
+                      </li>
+                      <li>
+                        <span class="fw-sm-bold fw-xs-normal">Padding in Tablet / .p-sm-10px</span>
+                      </li>
+                      <li>
+                        <span class="fw-md-bold fw-sm-normal">Padding in Medium Laptop / .p-md-20px</span>
+                      </li>
+                      <li><span class="fw-bold fw-md-normal">Padding in larger screen / .p-50px</span></li>
+                    </ul>
+                  </div>
+                </textarea>
+              </div>
+
+              <h4 class="mt-4 fw-semibold">Same goes with height</h4>
+
+              <div class="m-50px m-xs-5px m-sm-10px m-md-20px text-bg-gray-300 p-3">
+                Margin of this HTML element is
+                <ul>
+                  <li>
+                    <span class="fw-xs-bold">Margin in Mobile / .m-xs-5px</span>
+                  </li>
+                  <li>
+                    <span class="fw-sm-bold fw-xs-normal">Margin in Tablet / .m-sm-10px</span>
+                  </li>
+                  <li>
+                    <span class="fw-md-bold fw-sm-normal">Margin in Medium Laptop / .m-md-20px</span>
+                  </li>
+                  <li><span class="fw-bold fw-md-normal">Margin in larger screen / .m-50px</span></li>
+                </ul>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10" aria-label="code">
+                  <div class="m-50px m-xs-5px m-sm-10px m-md-20px text-bg-gray-300 p-3">
+                    Margin of this HTML element is
+                    <ul>
+                      <li>
+                        <span class="fw-xs-bold">Margin in Mobile / .m-xs-5px</span>
+                      </li>
+                      <li>
+                        <span class="fw-sm-bold fw-xs-normal">Margin in Tablet / .m-sm-10px</span>
+                      </li>
+                      <li>
+                        <span class="fw-md-bold fw-sm-normal">Margin in Medium Laptop / .m-md-20px</span>
+                      </li>
+                      <li><span class="fw-bold fw-md-normal">Margin in larger screen / .m-50px</span></li>
+                    </ul>
+                  </div>
+                </textarea>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+      <!-- Spacing info [END] -->
+
+      <!-- Background Positions [Start] -->
+      <article class="my-3" id="background-pos-info">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Background Positions</h3>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-bold">To apply different background position or attachment properties, you can use these
+                classes</p>
+
+              <h6>Background Position Classes</h6>
+              <ul>
+                <li>Background position <b>top-left</b></li><code>.bgPosTopLeft</code></li>
+                <li>Background position <b>top-center</b><code>.bgPosTopCenter</code></li>
+                <li>Background position <b>top-right</b> <code>.bgPosTopRight</code></li>
+                <li>Background position <b>bottom-left</b> <code>.bgPosBtmLeft</code></li>
+                <li>Background position <b>bottom-center</b> <code>.bgPosBtmCenter</code></li>
+                <li>Background position <b>bottom-right</b> <code>.bgPosBtmRight</code></li>
+                <li>Background position <b>left-center</b> <code>.bgPosLeftCenter</code></li>
+                <li>Background position <b>right-center</b> <code>.bgPosRightCenter</code></li>
+              </ul>
+
+              <h6>Background Other Classes</h6>
+              <ul>
+                <li>To remove background <code>.nobg</code></li>
+                <li>To repeat background<code>.bg-repeat</code></li>
+                <li>To repeat background horizontally<code>.bg-repeat-x</code></li>
+                <li>To repeat background vertically<code>.bg-repeat-y</code></li>
+                <li>To contain background<code>.bgContain</code></li>
+                <li>To fixed background<code>.bgfixed</code></li>
+                <li>To scroll background <code>.bgscroll</code></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </article>
+      <!-- Background Positions [END] -->
+
+      <!-- Social info [Start] -->
+      <article class="my-3" id="social-info">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Social Media CLasses</h3>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-bold">Social media classes are available for text, text with background, only backgroud and
+                buttons as well. Please follow example below </p>
+
+              <h6>Classes for text</h6>
+
+              <div class="mb-3 text-twitter">.text-twitter</div>
+              <div class="mb-3 text-facebook">.text-facebook</div>
+              <div class="mb-3 text-googleplus">.text-googleplus</div>
+              <div class="mb-3 text-google">.text-google</div>
+              <div class="mb-3 text-pinterest">.text-pinterest</div>
+              <div class="mb-3 text-linkedin">.text-linkedin</div>
+              <div class="mb-3 text-youtube">.text-youtube</div>
+              <div class="mb-3 text-vimeo">.text-vimeo</div>
+              <div class="mb-3 text-tumblr">.text-tumblr</div>
+              <div class="mb-3 text-instagram">.text-instagram</div>
+              <div class="mb-3 text-flickr">.text-flickr</div>
+              <div class="mb-3 text-dribbble">.text-dribbble</div>
+              <div class="mb-3 text-quora">.text-quora</div>
+              <div class="mb-3 text-foursquare">.text-foursquare</div>
+              <div class="mb-3 text-forrst">.text-forrst</div>
+              <div class="mb-3 text-vk">.text-vk</div>
+              <div class="mb-3 text-wordpress">.text-wordpress</div>
+              <div class="mb-3 text-stumbleupon">.text-stumbleupon</div>
+              <div class="mb-3 text-yahoo">.text-yahoo</div>
+              <div class="mb-3 text-blogger">.text-blogger</div>
+              <div class="mb-3 text-soundcloud">.text-soundcloud</div>
+              <div class="mb-3 text-apple">.text-apple</div>
+              <div class="mb-3 text-android">.text-android</div>
+              <div class="mb-3 text-windows">.text-windows</div>
+
+              <hr />
+              <h6>Classes for text with background</h6>
+              <div class="mb-3 p-3 text-bg-twitter">.text-bg-twitter</div>
+              <div class="mb-3 p-3 text-bg-facebook">.text-bg-facebook</div>
+              <div class="mb-3 p-3 text-bg-googleplus">.text-bg-googleplus</div>
+              <div class="mb-3 p-3 text-bg-google">.text-bg-google</div>
+              <div class="mb-3 p-3 text-bg-pinterest">.text-bg-pinterest</div>
+              <div class="mb-3 p-3 text-bg-linkedin">.text-bg-linkedin</div>
+              <div class="mb-3 p-3 text-bg-youtube">.text-bg-youtube</div>
+              <div class="mb-3 p-3 text-bg-vimeo">.text-bg-vimeo</div>
+              <div class="mb-3 p-3 text-bg-tumblr">.text-bg-tumblr</div>
+              <div class="mb-3 p-3 text-bg-instagram">.text-bg-instagram</div>
+              <div class="mb-3 p-3 text-bg-flickr">.text-bg-flickr</div>
+              <div class="mb-3 p-3 text-bg-dribbble">.text-bg-dribbble</div>
+              <div class="mb-3 p-3 text-bg-quora">.text-bg-quora</div>
+              <div class="mb-3 p-3 text-bg-foursquare">.text-bg-foursquare</div>
+              <div class="mb-3 p-3 text-bg-forrst">.text-bg-forrst</div>
+              <div class="mb-3 p-3 text-bg-vk">.text-bg-vk</div>
+              <div class="mb-3 p-3 text-bg-wordpress">.text-bg-wordpress</div>
+              <div class="mb-3 p-3 text-bg-stumbleupon">.text-bg-stumbleupon</div>
+              <div class="mb-3 p-3 text-bg-yahoo">.text-bg-yahoo</div>
+              <div class="mb-3 p-3 text-bg-blogger">.text-bg-blogger</div>
+              <div class="mb-3 p-3 text-bg-soundcloud">.text-bg-soundcloud</div>
+              <div class="mb-3 p-3 text-bg-apple">.text-bg-apple</div>
+              <div class="mb-3 p-3 text-bg-android">.text-bg-android</div>
+              <div class="mb-3 p-3 text-bg-windows">.text-bg-windows</div>
+
+              <hr />
+              <h6>Classes for buttons</h6>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-twitter">.btn .btn-twitter</button>
+                <button class="btn btn-outline-twitter">.btn .btn-outline-twitter</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-facebook">.btn .btn-facebook</button>
+                <button class="btn btn-outline-facebook">.btn .btn-outline-facebook</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-googleplus">.btn .btn-googleplus</button>
+                <button class="btn btn-outline-googleplus">.btn .btn-outline-googleplus</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-google">.btn .btn-google</button>
+                <button class="btn btn-outline-google">.btn .btn-outline-google</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-pinterest">.btn .btn-pinterest</button>
+                <button class="btn btn-outline-pinterest">.btn .btn-outline-pinterest</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-linkedin">.btn .btn-linkedin</button>
+                <button class="btn btn-outline-linkedin">.btn .btn-outline-linkedin</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-youtube">.btn .btn-youtube</button>
+                <button class="btn btn-outline-youtube">.btn .btn-outline-youtube</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-vimeo">.btn .btn-vimeo</button>
+                <button class="btn btn-outline-vimeo">.btn .btn-outline-vimeo</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-tumblr">.btn .btn-tumblr</button>
+                <button class="btn btn-outline-tumblr">.btn .btn-outline-tumblr</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-instagram">.btn .btn-instagram</button>
+                <button class="btn btn-outline-instagram">.btn .btn-outline-instagram</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-flickr">.btn .btn-flickr</button>
+                <button class="btn btn-outline-flickr">.btn .btn-outline-flickr</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-dribbble">.btn .btn-dribbble</button>
+                <button class="btn btn-outline-dribbble">.btn .btn-outline-dribbble</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-quora">.btn .btn-quora</button>
+                <button class="btn btn-outline-quora">.btn .btn-outline-quora</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-foursquare">.btn .btn-foursquare</button>
+                <button class="btn btn-outline-foursquare">.btn .btn-outline-foursquare</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-forrst">.btn .btn-forrst</button>
+                <button class="btn btn-outline-forrst">.btn .btn-outline-forrst</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-vk">.btn .btn-vk</button>
+                <button class="btn btn-outline-vk">.btn .btn-outline-vk</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-wordpress">.btn .btn-wordpress</button>
+                <button class="btn btn-outline-wordpress">.btn .btn-outline-wordpress</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-stumbleupon">.btn .btn-stumbleupon</button>
+                <button class="btn btn-outline-stumbleupon">.btn .btn-outline-stumbleupon</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-yahoo">.btn .btn-yahoo</button>
+                <button class="btn btn-outline-yahoo">.btn .btn-outline-yahoo</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-blogger">.btn .btn-blogger</button>
+                <button class="btn btn-outline-blogger">.btn .btn-outline-blogger</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-soundcloud">.btn .btn-soundcloud</button>
+                <button class="btn btn-outline-soundcloud">.btn .btn-outline-soundcloud</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-apple">.btn .btn-apple</button>
+                <button class="btn btn-outline-apple">.btn .btn-outline-apple</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-android">.btn .btn-android</button>
+                <button class="btn btn-outline-android">.btn .btn-outline-android</button>
+              </div>
+              <div class="d-flex my-3 gap-3">
+                <button class="btn btn-windows">.btn .btn-windows</button>
+                <button class="btn btn-outline-windows">.btn .btn-outline-windows</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </article>
+      <!-- Social info [END] -->
+    </section>
+    <!-- Extended Classes [END] -->
+
+    <!-- Mixins Classes [Start] -->
+    <section id="mixins">
+      <h2 class="sticky-md-top fw-bold pt-3 pt-xl-5 pb-2">Mixins / Functions</h2>
+
+      <!-- pixel to rem [Start] -->
+      <article class="my-3" id="mixin-px-rem">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>PX into REM</h3>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-semibold">To convert pixel value in rem use <code>rem({pixel})</code> function</p>
+              <div>
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10">
+              .foo{
+                font-size : rem(12);
+                width : rem(300);
+                height : rem(300);
+              }
+            </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- pixel to rem [END] -->
+
+      <!-- center position [Start] -->
+      <article class="my-3" id="mixin-center-pos">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Center position</h3>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-semibold">To align element center for certain case use:</p>
+              <ul>
+                <li>For both Horizontal and Vertical <code>@include center()</code></li>
+                <li>For Horizontal only <code>@include center(true, false)</code></li>
+                <li>For Vertical only <code>@include center(false, true)</code></li>
+              </ul>
+              <div>
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10">
+
+              // For both Horizontal and Vertical 
+              .center-pos{
+                @include center();
+              }
+
+              // For Horizontal only
+              .center-pos-horizontal{
+                @include center(true, false);
+              }
+
+              //For Vertical only
+              .center-pos-vertical{
+                @include center(false, true);
+              }
+            </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- center position [END] -->
+
+      <!-- center position [Start] -->
+      <article class="my-3" id="mixin-square">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 pt-xl-5">
+          <h3>Width / height / border-radius</h3>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-body">
+              <p class="fw-semibold">To create a element with similar width and height with optional border radius.</p>
+              <ul>
+                <li>For both similar with and height <code>@include square(rem(100));</code></li>
+                <li>For both similar with and height, including border radius
+                  <code>@include square(rem(100), rem(10));</code>
+                </li>
+              </ul>
+              <div>
+                <h5 class="mb-0">Code</h5>
+                <textarea class="w-100 text-bg-gray-900 mt-3 p-3 brd-10" rows="10">
+
+              // For both similar with and height
+              .box{
+                @include square(rem(100));
+              }
+
+              // For both similar with and height, including border radius
+              .box-2{
+                @include square(rem(100), rem(10));
+              }
+            </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- center position [END] -->
+    </section>
+    <!-- Mixins Classes [END] -->
   </div>
   <!-- Content Wrapper [END] -->
 
-  <!-- Modals -->
+  <!-- Modals [Start]-->
   <div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -2843,11 +3775,13 @@
       </div>
     </div>
   </div>
+  <!-- Modals [END]-->
 
+  <!-- scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <script src="cheatsheet.js"></script>
+  <script src="brandguide.js"></script>
 </body>
 
 </html>
