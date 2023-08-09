@@ -1,0 +1,809 @@
+// Border Radius generator -- works only if enable
+@mixin border-radius-generator() {
+  @if ($enable-border-radius-extended) {
+    @each $brdRadius in $borderRadius {
+      .brd-#{$brdRadius} {
+        @include border-radius(rem($brdRadius));
+      }
+
+      .brd-top-#{$brdRadius} {
+        @include border-top-radius(rem($brdRadius));
+      }
+
+      .brd-bottom-#{$brdRadius} {
+        @include border-bottom-radius(rem($brdRadius));
+      }
+
+      .brd-left-#{$brdRadius} {
+        @include border-left-radius(rem($brdRadius));
+      }
+
+      .brd-right-#{$brdRadius} {
+        @include border-right-radius(rem($brdRadius));
+      }
+
+      .brd-top-left-#{$brdRadius} {
+        border-top-left-radius: rem($brdRadius);
+      }
+
+      .brd-top-right-#{$brdRadius} {
+        border-top-right-radius: rem($brdRadius);
+      }
+
+      .brd-bottom-left-#{$brdRadius} {
+        border-bottom-left-radius: rem($brdRadius);
+      }
+
+      .brd-bottom-right-#{$brdRadius} {
+        border-bottom-right-radius: rem($brdRadius);
+      }
+    }
+
+    // Mobile class generator
+    @if ($enable-border-radius-extended-mbl) {
+
+      // for laptop
+      @include media-breakpoint-down(xl) {
+        @each $brdRadius in $borderRadius {
+          .brd-md-#{$brdRadius} {
+            @include border-radius(rem($brdRadius));
+          }
+
+          .brd-top-md-#{$brdRadius} {
+            @include border-top-radius(rem($brdRadius));
+          }
+
+          .brd-bottom-md-#{$brdRadius} {
+            @include border-bottom-radius(rem($brdRadius));
+          }
+
+          .brd-left-md-#{$brdRadius} {
+            @include border-left-radius(rem($brdRadius));
+          }
+
+          .brd-right-md-#{$brdRadius} {
+            @include border-right-radius(rem($brdRadius));
+          }
+
+          .brd-top-left-md-#{$brdRadius} {
+            border-top-left-radius: rem($brdRadius);
+          }
+
+          .brd-top-right-md-#{$brdRadius} {
+            border-top-right-radius: rem($brdRadius);
+          }
+
+          .brd-bottom-left-md-#{$brdRadius} {
+            border-bottom-left-radius: rem($brdRadius);
+          }
+
+          .brd-bottom-right-md-#{$brdRadius} {
+            border-bottom-right-radius: rem($brdRadius);
+          }
+        }
+      }
+
+      // for tablet
+      @include media-breakpoint-down(md) {
+        @each $brdRadius in $borderRadius {
+          .brd-sm-#{$brdRadius} {
+            @include border-radius(rem($brdRadius));
+          }
+
+          .brd-top-sm-#{$brdRadius} {
+            @include border-top-radius(rem($brdRadius));
+          }
+
+          .brd-bottom-sm-#{$brdRadius} {
+            @include border-bottom-radius(rem($brdRadius));
+          }
+
+          .brd-left-sm-#{$brdRadius} {
+            @include border-left-radius(rem($brdRadius));
+          }
+
+          .brd-right-sm-#{$brdRadius} {
+            @include border-right-radius(rem($brdRadius));
+          }
+
+          .brd-top-left-sm-#{$brdRadius} {
+            border-top-left-radius: rem($brdRadius);
+          }
+
+          .brd-top-right-sm-#{$brdRadius} {
+            border-top-right-radius: rem($brdRadius);
+          }
+
+          .brd-bottom-left-sm-#{$brdRadius} {
+            border-bottom-left-radius: rem($brdRadius);
+          }
+
+          .brd-bottom-right-sm-#{$brdRadius} {
+            border-bottom-right-radius: rem($brdRadius);
+          }
+        }
+      }
+
+      // for mobile
+      @include media-breakpoint-down(sm) {
+        @each $brdRadius in $borderRadius {
+          .brd-xs-#{$brdRadius} {
+            @include border-radius(rem($brdRadius));
+          }
+
+          .brd-top-xs-#{$brdRadius} {
+            @include border-top-radius(rem($brdRadius));
+          }
+
+          .brd-bottom-xs-#{$brdRadius} {
+            @include border-bottom-radius(rem($brdRadius));
+          }
+
+          .brd-left-xs-#{$brdRadius} {
+            @include border-left-radius(rem($brdRadius));
+          }
+
+          .brd-right-xs-#{$brdRadius} {
+            @include border-right-radius(rem($brdRadius));
+          }
+
+          .brd-top-left-xs-#{$brdRadius} {
+            border-top-left-radius: rem($brdRadius);
+          }
+
+          .brd-top-right-xs-#{$brdRadius} {
+            border-top-right-radius: rem($brdRadius);
+          }
+
+          .brd-bottom-left-xs-#{$brdRadius} {
+            border-bottom-left-radius: rem($brdRadius);
+          }
+
+          .brd-bottom-right-xs-#{$brdRadius} {
+            border-bottom-right-radius: rem($brdRadius);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//Font size Classes Auto Generator
+@mixin fontSizeClass() {
+  @if ($enable-font-size-extended) {
+    @each $fontSize in $fontSizes {
+      .fs-#{$fontSize}px {
+        font-size: rem($fontSize) !important;
+      }
+
+      .lh-#{$fontSize}px {
+        line-height: rem($fontSize) !important;
+      }
+    }
+
+    // Mobile class generator
+    @if ($enable-font-size-extended-mbl) {
+
+      // for laptop
+      @include media-breakpoint-down(xl) {
+        @each $fontSize in $fontSizes {
+          .fs-md-#{$fontSize}px {
+            font-size: rem($fontSize) !important;
+          }
+
+          .lh-md-#{$fontSize}px {
+            line-height: rem($fontSize) !important;
+          }
+        }
+      }
+
+      // for tablet
+      @include media-breakpoint-down(md) {
+        @each $fontSize in $fontSizes {
+          .fs-sm-#{$fontSize}px {
+            font-size: rem($fontSize) !important;
+          }
+
+          .lh-sm-#{$fontSize}px {
+            line-height: rem($fontSize) !important;
+          }
+        }
+      }
+
+      // for mobile
+      @include media-breakpoint-down(sm) {
+        @each $fontSize in $fontSizes {
+          .fs-xs-#{$fontSize}px {
+            font-size: rem($fontSize) !important;
+          }
+
+          .lh-xs-#{$fontSize}px {
+            line-height: rem($fontSize) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Font size Classes Auto Generator
+@mixin fontWeightClass() {
+  @if ($enable-font-weight-extended-mbl) {
+
+    // for laptop
+    @include media-breakpoint-down(xl) {
+      .fw-md-lighter {
+        font-weight: $font-weight-lighter !important;
+      }
+
+      .fw-md-light {
+        font-weight: $font-weight-light !important;
+      }
+
+      .fw-md-normal {
+        font-weight: $font-weight-normal !important;
+      }
+
+      .fw-md-medium {
+        font-weight: $font-weight-medium !important;
+      }
+
+      .fw-md-semibold {
+        font-weight: $font-weight-semibold !important;
+      }
+
+      .fw-md-bold {
+        font-weight: $font-weight-bold !important;
+      }
+
+      .fw-md-bolder {
+        font-weight: $font-weight-bolder !important;
+      }
+    }
+
+    // for tablet
+    @include media-breakpoint-down(md) {
+      .fw-sm-lighter {
+        font-weight: $font-weight-lighter !important;
+      }
+
+      .fw-sm-light {
+        font-weight: $font-weight-light !important;
+      }
+
+      .fw-sm-normal {
+        font-weight: $font-weight-normal !important;
+      }
+
+      .fw-sm-medium {
+        font-weight: $font-weight-medium !important;
+      }
+
+      .fw-sm-semibold {
+        font-weight: $font-weight-semibold !important;
+      }
+
+      .fw-sm-bold {
+        font-weight: $font-weight-bold !important;
+      }
+
+      .fw-sm-bolder {
+        font-weight: $font-weight-bolder !important;
+      }
+    }
+
+    // for mobile
+    @include media-breakpoint-down(sm) {
+      .fw-xs-lighter {
+        font-weight: $font-weight-lighter !important;
+      }
+
+      .fw-xs-light {
+        font-weight: $font-weight-light !important;
+      }
+
+      .fw-xs-normal {
+        font-weight: $font-weight-normal !important;
+      }
+
+      .fw-xs-medium {
+        font-weight: $font-weight-medium !important;
+      }
+
+      .fw-xs-semibold {
+        font-weight: $font-weight-semibold !important;
+      }
+
+      .fw-xs-bold {
+        font-weight: $font-weight-bold !important;
+      }
+
+      .fw-xs-bolder {
+        font-weight: $font-weight-bolder !important;
+      }
+    }
+
+  }
+}
+
+//Margin Classes Auto Generator
+@mixin magpadClass() {
+  @if($enable-magpad-extended) {
+    @each $magpad in $magpads {
+
+      //margin Class
+      .m-#{$magpad}px {
+        margin: rem($magpad) !important;
+      }
+
+      //padding class
+      .p-#{$magpad}px {
+        padding: rem($magpad) !important;
+      }
+
+      .px-#{$magpad}px {
+        padding-left: rem($magpad) !important;
+        padding-right: rem($magpad) !important;
+      }
+
+      .py-#{$magpad}px {
+        padding-top: rem($magpad) !important;
+        padding-bottom: rem($magpad) !important;
+      }
+
+      .mx-#{$magpad}px {
+        margin-left: rem($magpad) !important;
+        margin-right: rem($magpad) !important;
+      }
+
+      .my-#{$magpad}px {
+        margin-top: rem($magpad) !important;
+        margin-bottom: rem($magpad) !important;
+      }
+
+      //specific corner margins
+      .mt-#{$magpad}px {
+        margin-top: rem($magpad) !important;
+      }
+
+      .mb-#{$magpad}px {
+        margin-bottom: rem($magpad) !important;
+      }
+
+      .ml-#{$magpad}px {
+        margin-left: rem($magpad) !important;
+      }
+
+      .mr-#{$magpad}px {
+        margin-right: rem($magpad) !important;
+      }
+
+      //specific corner paddings
+      .pt-#{$magpad}px {
+        padding-top: rem($magpad) !important;
+      }
+
+      .pb-#{$magpad}px {
+        padding-bottom: rem($magpad) !important;
+      }
+
+      .pl-#{$magpad}px {
+        padding-left: rem($magpad) !important;
+      }
+
+      .pr-#{$magpad}px {
+        padding-right: rem($magpad) !important;
+      }
+    }
+
+    // Mobile class generator
+    @if ($enable-magpad-extended-mbl) {
+
+      // for laptop
+      @include media-breakpoint-down(xl) {
+        @each $magpad in $magpads {
+
+          //margin Class
+          .m-md-#{$magpad}px {
+            margin: rem($magpad) !important;
+          }
+
+          //padding class
+          .p-md-#{$magpad}px {
+            padding: rem($magpad) !important;
+          }
+
+          .px-md-#{$magpad}px {
+            padding-left: rem($magpad) !important;
+            padding-right: rem($magpad) !important;
+          }
+
+          .py-md-#{$magpad}px {
+            padding-top: rem($magpad) !important;
+            padding-bottom: rem($magpad) !important;
+          }
+
+          .mx-md-#{$magpad}px {
+            margin-left: rem($magpad) !important;
+            margin-right: rem($magpad) !important;
+          }
+
+          .my-md-#{$magpad}px {
+            margin-top: rem($magpad) !important;
+            margin-bottom: rem($magpad) !important;
+          }
+
+          //specific corner margins
+          .mt-md-#{$magpad}px {
+            margin-top: rem($magpad) !important;
+          }
+
+          .mb-md-#{$magpad}px {
+            margin-bottom: rem($magpad) !important;
+          }
+
+          .ml-md-#{$magpad}px {
+            margin-left: rem($magpad) !important;
+          }
+
+          .mr-md-#{$magpad}px {
+            margin-right: rem($magpad) !important;
+          }
+
+          //specific corner paddings
+          .pt-md-#{$magpad}px {
+            padding-top: rem($magpad) !important;
+          }
+
+          .pb-md-#{$magpad}px {
+            padding-bottom: rem($magpad) !important;
+          }
+
+          .pl-md-#{$magpad}px {
+            padding-left: rem($magpad) !important;
+          }
+
+          .pr-md-#{$magpad}px {
+            padding-right: rem($magpad) !important;
+          }
+        }
+      }
+
+      // for tablet
+      @include media-breakpoint-down(md) {
+        @each $magpad in $magpads {
+
+          //margin Class
+          .m-sm-#{$magpad}px {
+            margin: rem($magpad) !important;
+          }
+
+          //padding class
+          .p-sm-#{$magpad}px {
+            padding: rem($magpad) !important;
+          }
+
+          .px-sm-#{$magpad}px {
+            padding-left: rem($magpad) !important;
+            padding-right: rem($magpad) !important;
+          }
+
+          .py-sm-#{$magpad}px {
+            padding-top: rem($magpad) !important;
+            padding-bottom: rem($magpad) !important;
+          }
+
+          .mx-sm-#{$magpad}px {
+            margin-left: rem($magpad) !important;
+            margin-right: rem($magpad) !important;
+          }
+
+          .my-sm-#{$magpad}px {
+            margin-top: rem($magpad) !important;
+            margin-bottom: rem($magpad) !important;
+          }
+
+          //specific corner margins
+          .mt-sm-#{$magpad}px {
+            margin-top: rem($magpad) !important;
+          }
+
+          .mb-sm-#{$magpad}px {
+            margin-bottom: rem($magpad) !important;
+          }
+
+          .ml-sm-#{$magpad}px {
+            margin-left: rem($magpad) !important;
+          }
+
+          .mr-sm-#{$magpad}px {
+            margin-right: rem($magpad) !important;
+          }
+
+          //specific corner paddings
+          .pt-sm-#{$magpad}px {
+            padding-top: rem($magpad) !important;
+          }
+
+          .pb-sm-#{$magpad}px {
+            padding-bottom: rem($magpad) !important;
+          }
+
+          .pl-sm-#{$magpad}px {
+            padding-left: rem($magpad) !important;
+          }
+
+          .pr-sm-#{$magpad}px {
+            padding-right: rem($magpad) !important;
+          }
+        }
+      }
+
+      // for mobile
+      @include media-breakpoint-down(sm) {
+        @each $magpad in $magpads {
+
+          //margin Class
+          .m-xs-#{$magpad}px {
+            margin: rem($magpad) !important;
+          }
+
+          //padding class
+          .p-xs-#{$magpad}px {
+            padding: rem($magpad) !important;
+          }
+
+          .px-xs-#{$magpad}px {
+            padding-left: rem($magpad) !important;
+            padding-right: rem($magpad) !important;
+          }
+
+          .py-xs-#{$magpad}px {
+            padding-top: rem($magpad) !important;
+            padding-bottom: rem($magpad) !important;
+          }
+
+          .mx-xs-#{$magpad}px {
+            margin-left: rem($magpad) !important;
+            margin-right: rem($magpad) !important;
+          }
+
+          .my-xs-#{$magpad}px {
+            margin-top: rem($magpad) !important;
+            margin-bottom: rem($magpad) !important;
+          }
+
+          //specific corner margins
+          .mt-xs-#{$magpad}px {
+            margin-top: rem($magpad) !important;
+          }
+
+          .mb-xs-#{$magpad}px {
+            margin-bottom: rem($magpad) !important;
+          }
+
+          .ml-xs-#{$magpad}px {
+            margin-left: rem($magpad) !important;
+          }
+
+          .mr-xs-#{$magpad}px {
+            margin-right: rem($magpad) !important;
+          }
+
+          //specific corner paddings
+          .pt-xs-#{$magpad}px {
+            padding-top: rem($magpad) !important;
+          }
+
+          .pb-xs-#{$magpad}px {
+            padding-bottom: rem($magpad) !important;
+          }
+
+          .pl-xs-#{$magpad}px {
+            padding-left: rem($magpad) !important;
+          }
+
+          .pr-xs-#{$magpad}px {
+            padding-right: rem($magpad) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Width and Height Classes Auto Generator
+@mixin widthClass() {
+  @if ($enable-font-size-extended) {
+    @each $width in $widths {
+      .w-#{$width}px {
+        width: rem($width) !important;
+      }
+
+      .h-#{$width}px {
+        height: rem($width) !important;
+      }
+    }
+
+    // Mobile class generator
+    @if ($enable-font-size-extended-mbl) {
+
+      // for laptop
+      @include media-breakpoint-down(xl) {
+        @each $width in $widths {
+          .w-md-#{$width}px {
+            width: rem($width) !important;
+          }
+
+          .h-md-#{$width}px {
+            height: rem($width) !important;
+          }
+        }
+      }
+
+      // for tablet
+      @include media-breakpoint-down(md) {
+        @each $width in $widths {
+          .w-sm-#{$width}px {
+            width: rem($width) !important;
+          }
+
+          .h-sm-#{$width}px {
+            height: rem($width) !important;
+          }
+        }
+      }
+
+      // for mobile
+      @include media-breakpoint-down(sm) {
+        @each $width in $widths {
+          .w-xs-#{$width}px {
+            width: rem($width) !important;
+          }
+
+          .h-xs-#{$width}px {
+            height: rem($width) !important;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//Social Color Auto Generator
+@mixin socialColorClass() {
+  @if($enable-social-colors) {
+
+    @each $socialColor,
+    $color in $socialColors {
+
+      //Other Fonts Colors Class
+      .text-#{$socialColor} {
+
+        &,
+        * {
+          color: $color !important;
+        }
+      }
+
+      .bg-#{$socialColor} {
+        background-color: $color !important;
+      }
+
+      .text-bg-#{$socialColor} {
+        background-color: $color !important;
+
+        color: color-contrast($color);
+      }
+
+      .btn-#{$socialColor} {
+        @include button-variant($color, $color);
+
+        &:hover {
+          @include button-variant($color, $color);
+        }
+      }
+
+      .btn-outline-#{$socialColor} {
+        @include button-outline-variant($color, $color);
+
+        &:hover {
+          @include button-variant($color, $color);
+        }
+      }
+    }
+  }
+}
+
+// Convert px to rem
+@function rem($pixels, $context: 16) {
+  @return math.div($pixels, $context) * 1rem;
+}
+
+// Media Query [Start]
+@mixin mq($breakpoint, $type: min) {
+
+  // Checking $breakpoint value in $grid-breakpoints object value
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    // getting $grid-breakpoints object value and asign width
+    $width: map_get($grid-breakpoints, $breakpoint);
+
+    // Decrease 1px from $grid-breakpoints value for max-width $type
+    @if $type ==max {
+      $width: $width - 1px;
+    }
+
+    // Print Media query
+    @media (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin mq-only($min-width, $max-width) {
+  @if map_has_key($grid-breakpoints, $min-width) and map_has_key($grid-breakpoints, $max-width) {
+    // define value to relevant$grid-breakpoints
+    $min-width: map_get($grid-breakpoints, $min-width);
+    $max-width: map_get($grid-breakpoints, $max-width) - 1px;
+
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Please Define correct media query breakpoint";
+  }
+}
+
+// Media Query [END]
+
+// Center Align element
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+// width and height mixin with optional border-radius
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius !=0 {
+    border-radius: $radius;
+  }
+}
+
+// element parenet style mixin
+@mixin is-parent($parent-selector) {
+  $current-sequences: &;
+  $new-sequences: ();
+
+  @each $sequence in $current-sequences {
+    $current-selector: nth($sequence, -1);
+    $prepended-selector: join($parent-selector, $current-selector);
+    $new-sequence: set-nth($sequence, -1, $prepended-selector);
+    $new-sequences: append($new-sequences, $new-sequence, comma);
+  }
+
+  @at-root #{$new-sequences} {
+    @content;
+  }
+}
